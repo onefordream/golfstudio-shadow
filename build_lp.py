@@ -158,11 +158,11 @@ html = f"""<!DOCTYPE html>
   .photo.tall {{ height:120px; object-position:center 26%; }}
   h1 {{ font-size:23px; font-weight:700; letter-spacing:.08em; margin-top:10px; color:#17181a; }}
   .sub {{ font-size:12px; color:#6f6c62; margin-top:8px; line-height:1.7; }}
-  .live {{ display:inline-block; margin-top:12px; font-size:11px; color:#fff; background:#14402f; border-radius:999px; padding:4px 12px; font-weight:700; }}
-  .group-note {{ margin-top:14px; font-size:12px; color:#5c4a17; background:#fdf6e0; border:1px solid #c9a86a; border-radius:10px; padding:10px 12px; line-height:1.8; }}
+  .live {{ display:inline-block; margin-top:12px; font-size:11px; color:#fff; background:#14402f; border-radius:0; padding:4px 12px; font-weight:700; }}
+  .group-note {{ margin-top:14px; font-size:12px; color:#5c4a17; background:#fdf6e0; border:1px solid #c9a86a; border-radius:0; padding:10px 12px; line-height:1.8; }}
   .group-note a {{ color:#14402f; font-weight:700; }}
   .nav {{ display:flex; gap:8px; margin-top:14px; }}
-  .nav a {{ flex:1; text-decoration:none; background:#14402f; color:#fff; border-radius:12px; padding:11px 4px 9px; text-align:center; }}
+  .nav a {{ flex:1; text-decoration:none; background:#14402f; color:#fff; border-radius:0; padding:11px 4px 9px; text-align:center; }}
   .nav a.gold {{ background:#a5812f; }}
   .nav a.black {{ background:#17181a; }}
   .nav .n-name {{ display:block; font-size:13px; font-weight:700; line-height:1.4; }}
@@ -188,7 +188,7 @@ html = f"""<!DOCTYPE html>
   .closed {{ font-size:12.5px; color:#9a968a; }}
   .cal {{ margin-top:12px; }}
   .cal-r {{ display:none; }}
-  .cal-l {{ display:inline-block; font-size:12px; font-weight:700; color:#14402f; border:1px solid #14402f; border-radius:999px; padding:5px 12px; margin:0 5px 10px 0; cursor:pointer; background:#fff; }}
+  .cal-l {{ display:inline-block; font-size:12px; font-weight:700; color:#14402f; border:1px solid #14402f; border-radius:0; padding:5px 12px; margin:0 5px 10px 0; cursor:pointer; background:#fff; }}
   .cal-t {{ display:none; width:100%; border-collapse:collapse; table-layout:fixed; }}
   .cal-t th, .cal-t td {{ border:1px solid #e5e0d2; text-align:center; padding:5px 0; font-size:12px; }}
   .cal-t th.dt {{ background:#f4f1e8; font-weight:700; font-size:12px; }}
@@ -197,7 +197,7 @@ html = f"""<!DOCTYPE html>
   .cal-t td.tm, .cal-t th.tm {{ width:46px; background:#faf9f5; color:#6f6c62; font-size:11px; font-weight:700; }}
   .cal-t a.o {{ color:#14402f; font-weight:700; font-size:15px; text-decoration:none; display:block; }}
   .cal-t span.x {{ color:#cfcbc0; font-size:12px; }}
-  .campaign {{ margin-top:14px; border:2px solid #c9a86a; border-radius:12px; overflow:hidden; }}
+  .campaign {{ margin-top:14px; border:2px solid #c9a86a; border-radius:0; overflow:hidden; }}
   .campaign-head {{ background:#14402f; color:#fff; font-size:14px; font-weight:700; padding:9px 14px; letter-spacing:.04em; }}
   .campaign-until {{ float:right; font-size:11px; color:#e6c87a; font-weight:700; }}
   .campaign ul {{ list-style:none; padding:10px 14px 4px; }}
@@ -208,7 +208,7 @@ html = f"""<!DOCTYPE html>
   .legend {{ font-size:11px; color:#6f6c62; margin-top:8px; }}
   .legend .o {{ color:#14402f; font-weight:700; }}
   .note {{ font-size:11px; color:#9a968a; line-height:1.8; margin:12px 0 8px; }}
-  .phone {{ margin-top:26px; background:#14402f; border-radius:14px; padding:18px; text-align:center; }}
+  .phone {{ margin-top:26px; background:#14402f; border-radius:0; padding:18px; text-align:center; }}
   .phone .lead {{ font-size:13px; color:#e9e6da; line-height:1.8; }}
   .phone a.tel {{ display:inline-block; margin-top:10px; font-size:22px; font-weight:700; color:#e6c87a; text-decoration:none; letter-spacing:.05em; }}
   footer {{ margin-top:26px; font-size:12px; color:#6f6c62; line-height:1.9; text-align:center; }}
