@@ -87,9 +87,25 @@ TIMES = [f"{h}:00" for h in range(10, 21)]
 
 
 def calendar_html(menu: dict, prefix: str) -> str:
-    """ホットペッパー式の○×カレンダー (縦=時間 / 横=日付, 週切り替えはCSSのみ)"""
+    """ホットペッパー式の○×カレンダー (縦=時間 / 横=日付, 週切り替えはCSSのみ)
+
+    ○は公式予約へのPOST送信ボタン。取得時に保持したフォームフィールド一式と
+    reserve_time[2]=「日付<TAB>時刻」+ reserveconfirm[2]=次へ を公式actionへ送ると、
+    その日時の「ご予約内容の確認」画面へ直接進む (セッション不要・検証済み)。
+    """
+    import html as _html
+
     days = full_days(menu)
     weeks = [days[i : i + 7] for i in range(0, len(days), 7)]
+    booking = menu.get("booking") or {}
+    action = booking.get("action", "")
+    bfields = [list(f) for f in (booking.get("fields") or [])]
+    if action and "reserve_time[2]" not in {k for k, _ in bfields}:
+        bfields.append(["reserve_time[2]", ""])
+    hidden = "".join(
+        f'<input type="hidden" name="{_html.escape(k, quote=True)}" value="{_html.escape(v, quote=True)}">'
+        for k, v in bfields
+    )
     parts = [f'<div class="cal" id="{prefix}-ph">']
     # 週切り替えラジオ + ラベル
     for wi, wk in enumerate(weeks):
@@ -98,7 +114,12 @@ def calendar_html(menu: dict, prefix: str) -> str:
             f'<input class="cal-r" type="radio" name="cal-{prefix}" id="cal-{prefix}-{wi}"{checked}>'
             f'<label class="cal-l" for="cal-{prefix}-{wi}">{md(wk[0]["date"])}〜</label>'
         )
-    parts.append('<div class="cal-weeks">')
+    if action:
+        parts.append(
+            f'<form method="post" action="{action}" target="_blank">{hidden}<div class="cal-weeks">'
+        )
+    else:
+        parts.append('<div class="cal-weeks">')
     for wi, wk in enumerate(weeks):
         parts.append(f'<table class="cal-t wk{wi}">')
         # ヘッダー行: 日付
@@ -115,19 +136,28 @@ def calendar_html(menu: dict, prefix: str) -> str:
             tds = [f'<td class="tm">{t}</td>']
             for day in wk:
                 if t in day["times"]:
-                    tds.append(
-                        f'<td><a class="o" href="{menu["source_url"]}" target="_blank" rel="noopener">○</a></td>'
-                    )
+                    if action:
+                        tds.append(
+                            '<td><button type="submit" class="o" name="reserveconfirm[2]" value="次へ" '
+                            f"onclick=\"this.form.elements['reserve_time[2]'].value='{day['date']}&#9;{t}'\">○</button></td>"
+                        )
+                    else:
+                        tds.append(
+                            '<td><a class="o" href="https://golfstudio-shadow.jp/pcreserve.php" target="_blank" rel="noopener">○</a></td>'
+                        )
                 else:
                     tds.append('<td><span class="x">×</span></td>')
             parts.append("<tr>" + "".join(tds) + "</tr>")
         parts.append("</table>")
     parts.append("</div>")
+    if action:
+        parts.append("</form>")
     # 週表示の切り替えCSS (このカレンダー専用)
+    mid = "form .cal-weeks" if action else ".cal-weeks"
     rules = []
     for wi in range(len(weeks)):
         rules.append(
-            f"#{prefix}-ph input#cal-{prefix}-{wi}:checked ~ .cal-weeks .wk{wi} {{ display:table; }}"
+            f"#{prefix}-ph input#cal-{prefix}-{wi}:checked ~ {mid} .wk{wi} {{ display:table; }}"
         )
         rules.append(
             f"#{prefix}-ph input#cal-{prefix}-{wi}:checked + .cal-l {{ background:#14402f; color:#fff; }}"
@@ -195,6 +225,7 @@ html = f"""<!DOCTYPE html>
   .cal-t th.dt .wd {{ display:block; font-size:10px; margin-left:0; }}
   .cal-t th.dt.closed {{ background:#eceae2; color:#9a968a; }}
   .cal-t td.tm, .cal-t th.tm {{ width:46px; background:#faf9f5; color:#6f6c62; font-size:11px; font-weight:700; }}
+  .cal-t button.o {{ background:none; border:none; padding:0; font:inherit; color:#14402f; font-weight:700; font-size:15px; cursor:pointer; display:block; width:100%; }}
   .cal-t a.o {{ color:#14402f; font-weight:700; font-size:15px; text-decoration:none; display:block; }}
   .cal-t span.x {{ color:#cfcbc0; font-size:12px; }}
   .campaign {{ margin-top:14px; border:2px solid #c9a86a; border-radius:0; overflow:hidden; }}
@@ -240,7 +271,7 @@ html = f"""<!DOCTYPE html>
     <img class="photo tall" src="{LESSON_URI}" alt="体験レッスンの様子">
     {calendar_html(trial, "trial")}
     <p class="legend"><span class="o">○</span> 予約できます ／ × 予約できません</p>
-    <p class="note">○を押すと公式予約ページへ進みます。2名様以上で同じ時間をご希望の場合は、お電話でご相談ください。</p>
+    <p class="note">○を押すと、その日時のまま公式の予約確認画面へ進みます。2名様以上で同じ時間をご希望の場合は、お電話でご相談ください。</p>
   </section>
 
   <section id="sim">
@@ -252,7 +283,7 @@ html = f"""<!DOCTYPE html>
     <img class="photo" src="{SIM_URI}" alt="シミュレーションルーム">
     {calendar_html(sim, "sim")}
     <p class="legend"><span class="o">○</span> 予約できます ／ × 予約できません</p>
-    <p class="note">○を押すと公式予約ページへ進みます。2名様以上で同じ時間をご希望の場合は、お電話でご相談ください。</p>
+    <p class="note">○を押すと、その日時のまま公式の予約確認画面へ進みます。2名様以上で同じ時間をご希望の場合は、お電話でご相談ください。</p>
   </section>
 
   <section id="vip">
@@ -264,7 +295,7 @@ html = f"""<!DOCTYPE html>
     <img class="photo" src="{VIP_URI}" alt="VIPルーム">
     {calendar_html(vip, "vip")}
     <p class="legend"><span class="o">○</span> 予約できます ／ × 予約できません</p>
-    <p class="note">○を押すと公式予約ページへ進みます。2名様以上で同じ時間をご希望の場合は、お電話でご相談ください。</p>
+    <p class="note">○を押すと、その日時のまま公式の予約確認画面へ進みます。2名様以上で同じ時間をご希望の場合は、お電話でご相談ください。</p>
   </section>
 
   <div class="phone">

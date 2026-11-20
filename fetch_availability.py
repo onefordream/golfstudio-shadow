@@ -102,6 +102,11 @@ def fetch_menu(opener, cfg: dict, now: datetime, horizon_days: int) -> dict:
     html = opener.open(req, timeout=30).read().decode("utf-8", "replace")
     merged = parse_days(html)
     base_fields = extract_form_fields(html)
+    # 予約導線用: ベースページのフォーム送信フィールド一式を保持する。
+    # LP側ではこのフィールド + reserve_time[2]=「日付\t時刻」+ reserveconfirm[2]=次へ
+    # を公式actionへPOSTすると、その日時の「ご予約内容の確認」画面へ直接進める
+    # (セッション不要・実地検証済み 2026-11-21)。
+    booking = {"action": FORM_ACTION, "fields": [list(f) for f in base_fields]}
 
     for wd_code in WEEKDAY_FILTERS:
         fields = [
@@ -139,7 +144,7 @@ def fetch_menu(opener, cfg: dict, now: datetime, horizon_days: int) -> dict:
         if not times and merged[date_label].get("status"):
             entry["status"] = merged[date_label]["status"]
         days.append(entry)
-    return {"label": cfg["label"], "source_url": url, "days": days}
+    return {"label": cfg["label"], "source_url": url, "days": days, "booking": booking}
 
 
 def main() -> None:
