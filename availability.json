@@ -1,22 +1,15 @@
 {
-  "fetched_at": "2026-11-20 22:41 JST",
+  "fetched_at": "2026-11-21 00:16 JST",
   "menus": {
     "trial": {
       "label": "体験レッスン",
-      "source_url": "https://golfstudio-shadow.jp/shop/myreserve/available/index/AD:/SI:/DM:/DI:/year:2026/month:11/day:20/menu:3/hour:10/minute:0/staff:s1/shop:12299/shop_select:/online:1/target_page:selectdate",
+      "source_url": "https://golfstudio-shadow.jp/shop/myreserve/available/index/AD:/SI:/DM:/DI:/year:2026/month:11/day:21/menu:3/hour:10/minute:0/staff:s1/shop:12299/shop_select:/online:1/target_page:selectdate",
       "days": [
-        {
-          "date": "2026/11/20",
-          "weekday": "金",
-          "times": [],
-          "status": "スタッフ対応不可"
-        },
         {
           "date": "2026/11/21",
           "weekday": "土",
-          "times": [
-            "13:00"
-          ]
+          "times": [],
+          "status": "スタッフ対応不可"
         },
         {
           "date": "2026/11/22",
@@ -41,11 +34,9 @@
           "weekday": "水",
           "times": [
             "11:00",
-            "13:00",
             "16:00",
             "17:00",
-            "18:00",
-            "19:00"
+            "18:00"
           ]
         },
         {
@@ -385,18 +376,169 @@
             "19:00"
           ]
         }
-      ]
+      ],
+      "booking": {
+        "action": "https://golfstudio-shadow.jp/shop/myreserve/available/index/AD:/SI:/DM:/DI:",
+        "fields": [
+          [
+            "shop",
+            "12299"
+          ],
+          [
+            "rerurn_page_online",
+            "1"
+          ],
+          [
+            "target_page_reminder[year]",
+            "2026"
+          ],
+          [
+            "target_page_reminder[month]",
+            "2026"
+          ],
+          [
+            "target_page_reminder[day]",
+            "21"
+          ],
+          [
+            "target_page_reminder[menu]",
+            "3"
+          ],
+          [
+            "target_page_reminder[hour]",
+            "10"
+          ],
+          [
+            "target_page_reminder[minute]",
+            "0"
+          ],
+          [
+            "target_page_reminder[staff]",
+            "s1"
+          ],
+          [
+            "target_page_reminder[shop]",
+            "12299"
+          ],
+          [
+            "target_page_reminder[shop_select]",
+            ""
+          ],
+          [
+            "target_page_reminder[online]",
+            "1"
+          ],
+          [
+            "target_page_reminder[target_page]",
+            "selectdate"
+          ],
+          [
+            "reserve_condition_data[reserve_condition_flg]",
+            "1"
+          ],
+          [
+            "reserve_condition_data[disp_days][0]",
+            "曜日を指定しない"
+          ],
+          [
+            "reserve_condition_data[disp_days][1]",
+            "土日祝日のみ"
+          ],
+          [
+            "reserve_condition_data[disp_days][2]",
+            "日曜日"
+          ],
+          [
+            "reserve_condition_data[disp_days][3]",
+            "月曜日"
+          ],
+          [
+            "reserve_condition_data[disp_days][4]",
+            "火曜日"
+          ],
+          [
+            "reserve_condition_data[disp_days][5]",
+            "水曜日"
+          ],
+          [
+            "reserve_condition_data[disp_days][6]",
+            "木曜日"
+          ],
+          [
+            "reserve_condition_data[disp_days][7]",
+            "金曜日"
+          ],
+          [
+            "reserve_condition_data[disp_days][8]",
+            "土曜日"
+          ],
+          [
+            "reserve_condition_data[sel_date]",
+            "0"
+          ],
+          [
+            "reserve_condition_data[sel_staff_name]",
+            "通常予約"
+          ],
+          [
+            "reserve_condition_data[menu_type]",
+            "0"
+          ],
+          [
+            "reserve_condition_data[sel_menu_name][0]",
+            "体験レッスン"
+          ],
+          [
+            "sel_date",
+            "0"
+          ],
+          [
+            "sel_staff",
+            "s1"
+          ],
+          [
+            "menu_type",
+            "0"
+          ],
+          [
+            "sel_menu[0]",
+            "3"
+          ],
+          [
+            "target_page",
+            "selectdate"
+          ],
+          [
+            "pageno_errcnt[1]",
+            "4"
+          ],
+          [
+            "pageno",
+            "1"
+          ],
+          [
+            "back_name",
+            "selectdate"
+          ],
+          [
+            "sd_flg",
+            "1"
+          ],
+          [
+            "back_button_name",
+            "return_to_online"
+          ],
+          [
+            "sel_date2",
+            "1"
+          ]
+        ]
+      }
     },
     "simulation": {
       "label": "シミュレーション打席",
-      "source_url": "https://golfstudio-shadow.jp/shop/myreserve/available/index/AD:/SI:/DM:/DI:/year:2026/month:11/day:20/menu:6/hour:10/minute:0/staff:s7/shop:12299/shop_select:/online:1/target_page:selectdate",
+      "source_url": "https://golfstudio-shadow.jp/shop/myreserve/available/index/AD:/SI:/DM:/DI:/year:2026/month:11/day:21/menu:6/hour:10/minute:0/staff:s7/shop:12299/shop_select:/online:1/target_page:selectdate",
       "days": [
-        {
-          "date": "2026/11/20",
-          "weekday": "金",
-          "times": [],
-          "status": "スタッフ対応不可"
-        },
         {
           "date": "2026/11/21",
           "weekday": "土",
@@ -798,18 +940,169 @@
             "19:00"
           ]
         }
-      ]
+      ],
+      "booking": {
+        "action": "https://golfstudio-shadow.jp/shop/myreserve/available/index/AD:/SI:/DM:/DI:",
+        "fields": [
+          [
+            "shop",
+            "12299"
+          ],
+          [
+            "rerurn_page_online",
+            "1"
+          ],
+          [
+            "target_page_reminder[year]",
+            "2026"
+          ],
+          [
+            "target_page_reminder[month]",
+            "2026"
+          ],
+          [
+            "target_page_reminder[day]",
+            "21"
+          ],
+          [
+            "target_page_reminder[menu]",
+            "6"
+          ],
+          [
+            "target_page_reminder[hour]",
+            "10"
+          ],
+          [
+            "target_page_reminder[minute]",
+            "0"
+          ],
+          [
+            "target_page_reminder[staff]",
+            "s7"
+          ],
+          [
+            "target_page_reminder[shop]",
+            "12299"
+          ],
+          [
+            "target_page_reminder[shop_select]",
+            ""
+          ],
+          [
+            "target_page_reminder[online]",
+            "1"
+          ],
+          [
+            "target_page_reminder[target_page]",
+            "selectdate"
+          ],
+          [
+            "reserve_condition_data[reserve_condition_flg]",
+            "1"
+          ],
+          [
+            "reserve_condition_data[disp_days][0]",
+            "曜日を指定しない"
+          ],
+          [
+            "reserve_condition_data[disp_days][1]",
+            "土日祝日のみ"
+          ],
+          [
+            "reserve_condition_data[disp_days][2]",
+            "日曜日"
+          ],
+          [
+            "reserve_condition_data[disp_days][3]",
+            "月曜日"
+          ],
+          [
+            "reserve_condition_data[disp_days][4]",
+            "火曜日"
+          ],
+          [
+            "reserve_condition_data[disp_days][5]",
+            "水曜日"
+          ],
+          [
+            "reserve_condition_data[disp_days][6]",
+            "木曜日"
+          ],
+          [
+            "reserve_condition_data[disp_days][7]",
+            "金曜日"
+          ],
+          [
+            "reserve_condition_data[disp_days][8]",
+            "土曜日"
+          ],
+          [
+            "reserve_condition_data[sel_date]",
+            "0"
+          ],
+          [
+            "reserve_condition_data[sel_staff_name]",
+            "シミュレーション打席"
+          ],
+          [
+            "reserve_condition_data[menu_type]",
+            "0"
+          ],
+          [
+            "reserve_condition_data[sel_menu_name][0]",
+            "シミュレーション打席"
+          ],
+          [
+            "sel_date",
+            "0"
+          ],
+          [
+            "sel_staff",
+            "s7"
+          ],
+          [
+            "menu_type",
+            "0"
+          ],
+          [
+            "sel_menu[0]",
+            "6"
+          ],
+          [
+            "target_page",
+            "selectdate"
+          ],
+          [
+            "pageno_errcnt[1]",
+            "1"
+          ],
+          [
+            "pageno",
+            "1"
+          ],
+          [
+            "back_name",
+            "selectdate"
+          ],
+          [
+            "sd_flg",
+            "1"
+          ],
+          [
+            "back_button_name",
+            "return_to_online"
+          ],
+          [
+            "sel_date2",
+            "1"
+          ]
+        ]
+      }
     },
     "vip": {
       "label": "VIPルーム",
-      "source_url": "https://golfstudio-shadow.jp/shop/myreserve/available/index/AD:/SI:/DM:/DI:/year:2026/month:11/day:20/menu:7/hour:10/minute:0/staff:s8/shop:12299/shop_select:/online:1/target_page:selectdate",
+      "source_url": "https://golfstudio-shadow.jp/shop/myreserve/available/index/AD:/SI:/DM:/DI:/year:2026/month:11/day:21/menu:7/hour:10/minute:0/staff:s8/shop:12299/shop_select:/online:1/target_page:selectdate",
       "days": [
-        {
-          "date": "2026/11/20",
-          "weekday": "金",
-          "times": [],
-          "status": "スタッフ対応不可"
-        },
         {
           "date": "2026/11/21",
           "weekday": "土",
@@ -1205,7 +1498,164 @@
             "19:00"
           ]
         }
-      ]
+      ],
+      "booking": {
+        "action": "https://golfstudio-shadow.jp/shop/myreserve/available/index/AD:/SI:/DM:/DI:",
+        "fields": [
+          [
+            "shop",
+            "12299"
+          ],
+          [
+            "rerurn_page_online",
+            "1"
+          ],
+          [
+            "target_page_reminder[year]",
+            "2026"
+          ],
+          [
+            "target_page_reminder[month]",
+            "2026"
+          ],
+          [
+            "target_page_reminder[day]",
+            "21"
+          ],
+          [
+            "target_page_reminder[menu]",
+            "7"
+          ],
+          [
+            "target_page_reminder[hour]",
+            "10"
+          ],
+          [
+            "target_page_reminder[minute]",
+            "0"
+          ],
+          [
+            "target_page_reminder[staff]",
+            "s8"
+          ],
+          [
+            "target_page_reminder[shop]",
+            "12299"
+          ],
+          [
+            "target_page_reminder[shop_select]",
+            ""
+          ],
+          [
+            "target_page_reminder[online]",
+            "1"
+          ],
+          [
+            "target_page_reminder[target_page]",
+            "selectdate"
+          ],
+          [
+            "reserve_condition_data[reserve_condition_flg]",
+            "1"
+          ],
+          [
+            "reserve_condition_data[disp_days][0]",
+            "曜日を指定しない"
+          ],
+          [
+            "reserve_condition_data[disp_days][1]",
+            "土日祝日のみ"
+          ],
+          [
+            "reserve_condition_data[disp_days][2]",
+            "日曜日"
+          ],
+          [
+            "reserve_condition_data[disp_days][3]",
+            "月曜日"
+          ],
+          [
+            "reserve_condition_data[disp_days][4]",
+            "火曜日"
+          ],
+          [
+            "reserve_condition_data[disp_days][5]",
+            "水曜日"
+          ],
+          [
+            "reserve_condition_data[disp_days][6]",
+            "木曜日"
+          ],
+          [
+            "reserve_condition_data[disp_days][7]",
+            "金曜日"
+          ],
+          [
+            "reserve_condition_data[disp_days][8]",
+            "土曜日"
+          ],
+          [
+            "reserve_condition_data[sel_date]",
+            "0"
+          ],
+          [
+            "reserve_condition_data[sel_staff_name]",
+            "VIPルーム"
+          ],
+          [
+            "reserve_condition_data[menu_type]",
+            "0"
+          ],
+          [
+            "reserve_condition_data[sel_menu_name][0]",
+            "VIPルーム"
+          ],
+          [
+            "sel_date",
+            "0"
+          ],
+          [
+            "sel_staff",
+            "s8"
+          ],
+          [
+            "menu_type",
+            "0"
+          ],
+          [
+            "sel_menu[0]",
+            "7"
+          ],
+          [
+            "target_page",
+            "selectdate"
+          ],
+          [
+            "pageno_errcnt[1]",
+            "1"
+          ],
+          [
+            "pageno",
+            "1"
+          ],
+          [
+            "back_name",
+            "selectdate"
+          ],
+          [
+            "sd_flg",
+            "1"
+          ],
+          [
+            "back_button_name",
+            "return_to_online"
+          ],
+          [
+            "sel_date2",
+            "1"
+          ]
+        ]
+      }
     }
   }
 }
