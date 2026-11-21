@@ -1,16 +1,10 @@
 {
-  "fetched_at": "2026-11-21 19:23 JST",
+  "fetched_at": "2026-11-22 02:40 JST",
   "menus": {
     "trial": {
       "label": "体験レッスン",
-      "source_url": "https://golfstudio-shadow.jp/shop/myreserve/available/index/AD:/SI:/DM:/DI:/year:2026/month:11/day:21/menu:3/hour:10/minute:0/staff:s1/shop:12299/shop_select:/online:1/target_page:selectdate",
+      "source_url": "https://golfstudio-shadow.jp/shop/myreserve/available/index/AD:/SI:/DM:/DI:/year:2026/month:11/day:22/menu:3/hour:10/minute:0/staff:s1/shop:12299/shop_select:/online:1/target_page:selectdate",
       "days": [
-        {
-          "date": "2026/11/21",
-          "weekday": "土",
-          "times": [],
-          "status": "スタッフ対応不可"
-        },
         {
           "date": "2026/11/22",
           "weekday": "日",
@@ -61,7 +55,6 @@
             "15:00",
             "16:00",
             "17:00",
-            "18:00",
             "19:00",
             "20:00"
           ]
@@ -373,6 +366,23 @@
             "18:00",
             "19:00"
           ]
+        },
+        {
+          "date": "2026/12/22",
+          "weekday": "火",
+          "times": [
+            "10:00",
+            "11:00",
+            "12:00",
+            "13:00",
+            "14:00",
+            "15:00",
+            "16:00",
+            "17:00",
+            "18:00",
+            "19:00",
+            "20:00"
+          ]
         }
       ],
       "booking": {
@@ -396,7 +406,7 @@
           ],
           [
             "target_page_reminder[day]",
-            "21"
+            "22"
           ],
           [
             "target_page_reminder[menu]",
@@ -535,21 +545,14 @@
     },
     "simulation": {
       "label": "シミュレーション打席",
-      "source_url": "https://golfstudio-shadow.jp/shop/myreserve/available/index/AD:/SI:/DM:/DI:/year:2026/month:11/day:21/menu:6/hour:10/minute:0/staff:s7/shop:12299/shop_select:/online:1/target_page:selectdate",
+      "source_url": "https://golfstudio-shadow.jp/shop/myreserve/available/index/AD:/SI:/DM:/DI:/year:2026/month:11/day:22/menu:6/hour:10/minute:0/staff:s7/shop:12299/shop_select:/online:1/target_page:selectdate",
       "days": [
-        {
-          "date": "2026/11/21",
-          "weekday": "土",
-          "times": [],
-          "status": "スタッフ対応不可"
-        },
         {
           "date": "2026/11/22",
           "weekday": "日",
           "times": [
             "10:00",
             "11:00",
-            "12:00",
             "13:00",
             "14:00",
             "16:00"
@@ -933,6 +936,23 @@
             "18:00",
             "19:00"
           ]
+        },
+        {
+          "date": "2026/12/22",
+          "weekday": "火",
+          "times": [
+            "10:00",
+            "11:00",
+            "12:00",
+            "13:00",
+            "14:00",
+            "15:00",
+            "16:00",
+            "17:00",
+            "18:00",
+            "19:00",
+            "20:00"
+          ]
         }
       ],
       "booking": {
@@ -956,7 +976,7 @@
           ],
           [
             "target_page_reminder[day]",
-            "21"
+            "22"
           ],
           [
             "target_page_reminder[menu]",
@@ -1068,7 +1088,7 @@
           ],
           [
             "pageno_errcnt[1]",
-            "2"
+            "1"
           ],
           [
             "pageno",
@@ -1095,14 +1115,8 @@
     },
     "vip": {
       "label": "VIPルーム",
-      "source_url": "https://golfstudio-shadow.jp/shop/myreserve/available/index/AD:/SI:/DM:/DI:/year:2026/month:11/day:21/menu:7/hour:10/minute:0/staff:s8/shop:12299/shop_select:/online:1/target_page:selectdate",
+      "source_url": "https://golfstudio-shadow.jp/shop/myreserve/available/index/AD:/SI:/DM:/DI:/year:2026/month:11/day:22/menu:7/hour:10/minute:0/staff:s8/shop:12299/shop_select:/online:1/target_page:selectdate",
       "days": [
-        {
-          "date": "2026/11/21",
-          "weekday": "土",
-          "times": [],
-          "status": "スタッフ対応不可"
-        },
         {
           "date": "2026/11/22",
           "weekday": "日",
@@ -1485,6 +1499,23 @@
             "18:00",
             "19:00"
           ]
+        },
+        {
+          "date": "2026/12/22",
+          "weekday": "火",
+          "times": [
+            "10:00",
+            "11:00",
+            "12:00",
+            "13:00",
+            "14:00",
+            "15:00",
+            "16:00",
+            "17:00",
+            "18:00",
+            "19:00",
+            "20:00"
+          ]
         }
       ],
       "booking": {
@@ -1508,7 +1539,7 @@
           ],
           [
             "target_page_reminder[day]",
-            "21"
+            "22"
           ],
           [
             "target_page_reminder[menu]",
@@ -1620,7 +1651,7 @@
           ],
           [
             "pageno_errcnt[1]",
-            "2"
+            "1"
           ],
           [
             "pageno",
