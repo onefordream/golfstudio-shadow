@@ -1,16 +1,10 @@
 {
-  "fetched_at": "2026-11-26 23:07 JST",
+  "fetched_at": "2026-11-27 07:57 JST",
   "menus": {
     "trial": {
       "label": "体験レッスン",
-      "source_url": "https://golfstudio-shadow.jp/shop/myreserve/available/index/AD:/SI:/DM:/DI:/year:2026/month:11/day:26/menu:3/hour:10/minute:0/staff:s1/shop:12299/shop_select:/online:1/target_page:selectdate",
+      "source_url": "https://golfstudio-shadow.jp/shop/myreserve/available/index/AD:/SI:/DM:/DI:/year:2026/month:11/day:27/menu:3/hour:10/minute:0/staff:s1/shop:12299/shop_select:/online:1/target_page:selectdate",
       "days": [
-        {
-          "date": "2026/11/26",
-          "weekday": "木",
-          "times": [],
-          "status": "スタッフ対応不可"
-        },
         {
           "date": "2026/11/27",
           "weekday": "金",
@@ -378,6 +372,12 @@
             "18:00",
             "19:00"
           ]
+        },
+        {
+          "date": "2026/12/27",
+          "weekday": "日",
+          "times": [],
+          "status": "店舗休日"
         }
       ],
       "booking": {
@@ -401,7 +401,7 @@
           ],
           [
             "target_page_reminder[day]",
-            "26"
+            "27"
           ],
           [
             "target_page_reminder[menu]",
@@ -513,7 +513,7 @@
           ],
           [
             "pageno_errcnt[1]",
-            "4"
+            "3"
           ],
           [
             "pageno",
@@ -540,14 +540,8 @@
     },
     "simulation": {
       "label": "シミュレーション打席",
-      "source_url": "https://golfstudio-shadow.jp/shop/myreserve/available/index/AD:/SI:/DM:/DI:/year:2026/month:11/day:26/menu:6/hour:10/minute:0/staff:s7/shop:12299/shop_select:/online:1/target_page:selectdate",
+      "source_url": "https://golfstudio-shadow.jp/shop/myreserve/available/index/AD:/SI:/DM:/DI:/year:2026/month:11/day:27/menu:6/hour:10/minute:0/staff:s7/shop:12299/shop_select:/online:1/target_page:selectdate",
       "days": [
-        {
-          "date": "2026/11/26",
-          "weekday": "木",
-          "times": [],
-          "status": "スタッフ対応不可"
-        },
         {
           "date": "2026/11/27",
           "weekday": "金",
@@ -950,6 +944,12 @@
             "18:00",
             "19:00"
           ]
+        },
+        {
+          "date": "2026/12/27",
+          "weekday": "日",
+          "times": [],
+          "status": "店舗休日"
         }
       ],
       "booking": {
@@ -973,7 +973,7 @@
           ],
           [
             "target_page_reminder[day]",
-            "26"
+            "27"
           ],
           [
             "target_page_reminder[menu]",
@@ -1085,7 +1085,7 @@
           ],
           [
             "pageno_errcnt[1]",
-            "2"
+            "1"
           ],
           [
             "pageno",
@@ -1112,14 +1112,8 @@
     },
     "vip": {
       "label": "VIPルーム",
-      "source_url": "https://golfstudio-shadow.jp/shop/myreserve/available/index/AD:/SI:/DM:/DI:/year:2026/month:11/day:26/menu:7/hour:10/minute:0/staff:s8/shop:12299/shop_select:/online:1/target_page:selectdate",
+      "source_url": "https://golfstudio-shadow.jp/shop/myreserve/available/index/AD:/SI:/DM:/DI:/year:2026/month:11/day:27/menu:7/hour:10/minute:0/staff:s8/shop:12299/shop_select:/online:1/target_page:selectdate",
       "days": [
-        {
-          "date": "2026/11/26",
-          "weekday": "木",
-          "times": [],
-          "status": "スタッフ対応不可"
-        },
         {
           "date": "2026/11/27",
           "weekday": "金",
@@ -1515,6 +1509,12 @@
             "18:00",
             "19:00"
           ]
+        },
+        {
+          "date": "2026/12/27",
+          "weekday": "日",
+          "times": [],
+          "status": "店舗休日"
         }
       ],
       "booking": {
@@ -1538,7 +1538,7 @@
           ],
           [
             "target_page_reminder[day]",
-            "26"
+            "27"
           ],
           [
             "target_page_reminder[menu]",
@@ -1650,7 +1650,7 @@
           ],
           [
             "pageno_errcnt[1]",
-            "2"
+            "1"
           ],
           [
             "pageno",
